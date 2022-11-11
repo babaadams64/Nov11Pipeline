@@ -4,37 +4,32 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo ' Building'
+                echo 'Building'
             }
         }
-         stages {
-        stage('Stop') {
-            steps {
-                echo 'Stopping '
-            }
-        }
-         stages {
-        stage('Brag') {
-            steps {
-                echo 'Bragging'
-            }
-        }
-         stages {
-        stage('Juice') {
-            steps {
-                echo 'Juicing'
-            }
-        }
-         stages {
-        stage('Call') {
-            steps {
-                echo 'Calling'
-            }
-        }
-         stages {
-        stage('Flowing') {
+		stage('Flow') {
             steps {
                 echo 'Flowing'
+            }
+        }
+		stage('Stop') {
+            steps {
+                echo 'Stopping'
+            }
+        }
+		stage('Buy') {
+            steps {
+                echo 'Buying'
+            }
+        }
+		stage('Regards') {
+            steps {
+                echo 'Regarding'
+            }
+        }
+		stage('End') {
+            steps {
+                echo 'Ending'
             }
         }
     }
